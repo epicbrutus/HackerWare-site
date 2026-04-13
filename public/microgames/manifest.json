@@ -1,0 +1,10 @@
+{
+  "microgames": [
+    {
+      "id": "simple-microgame",
+      "src": "microgames/simple-microgame.html",
+      "creator": "Bobby",
+      "age": 12
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+@import './styles/theme.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 125%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-body);
+  color: var(--ink-strong);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.58)),
+    linear-gradient(45deg, var(--checker-dark) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--checker-dark) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--checker-dark) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--checker-dark) 75%);
+  background-color: var(--checker-light);
+  background-position:
+    0 0,
+    0 0,
+    0 16px,
+    16px -16px,
+    -16px 0;
+  background-size: auto, 32px 32px, 32px 32px, 32px 32px, 32px 32px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 4.125rem;
+  width: 100%;
+  background: var(--accent);
+  box-shadow: 0 1px 0 rgba(116, 17, 31, 0.35);
+}
+
+.page-frame {
+  width: min(100%, 80rem);
+  margin: 0 auto;
+  padding: 1rem 0 3.625rem;
+}
+
+.panel-surface {
+  position: relative;
+  border: 4px solid var(--panel-border);
+  border-radius: 1.875rem;
+  background: rgba(245, 245, 245, 0.5);
+  box-shadow:
+    0 8px 18px rgba(18, 10, 13, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 960px) {
+  .page-frame {
+    padding: 1rem 1rem 3rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .top-bar {
+    height: 3.25rem;
+  }
+
+  .panel-surface {
+    border-radius: 1.5rem;
+  }
+}

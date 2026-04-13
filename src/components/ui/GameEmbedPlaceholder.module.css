@@ -1,0 +1,22 @@
+.frame {
+  position: relative;
+  width: min(100%, 40rem);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 6px solid rgba(47, 31, 36, 0.72);
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 48%),
+    linear-gradient(180deg, #3a1e24 0%, #221217 100%);
+  box-shadow:
+    0 24px 40px rgba(35, 17, 22, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.embed {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #171212;
+}

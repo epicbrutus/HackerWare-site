@@ -1,0 +1,80 @@
+.section {
+  margin: 0 1.75rem;
+  padding: 1.4rem 1.25rem 1.25rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 30rem) minmax(0, 1fr);
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.copyCard {
+  min-height: 31rem;
+  padding: 1.25rem 1.25rem 1.15rem;
+  border: 6px solid rgba(240, 67, 92, 0.96);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.62);
+  text-align: center;
+}
+
+.heading {
+  margin: 0;
+  color: #fffefe;
+  font-size: clamp(2.1rem, 3vw, 3.3rem);
+  line-height: 0.98;
+  font-weight: 400;
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.copyStack {
+  margin-top: 1rem;
+}
+
+.copy {
+  margin: 0 0 1.8rem;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: clamp(0.95rem, 1.25vw, 1.45rem);
+  line-height: 1.45;
+  -webkit-text-stroke: 0.8px rgba(71, 63, 66, 0.6);
+  text-shadow: 0 3px 5px rgba(255, 255, 255, 0.32);
+}
+
+.copyAccent {
+  margin-bottom: 1.35rem;
+  font-size: clamp(1.1rem, 1.5vw, 1.8rem);
+}
+
+.copyHighlight {
+  color: #ff415f;
+}
+
+.embedWrap {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0.2rem;
+}
+
+@media (max-width: 960px) {
+  .section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .copyCard {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .copyCard {
+    padding: 1.25rem 1rem 1.3rem;
+  }
+}

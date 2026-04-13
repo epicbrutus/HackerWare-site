@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jua&display=swap');
+
+:root {
+  --font-display: 'Fugaz One', cursive;
+  --font-body: 'Jua', sans-serif;
+  --accent: #ec3750;
+  --accent-deep: #d32748;
+  --accent-dark: #862234;
+  --accent-highlight: #ff5b74;
+  --checker-light: #efefef;
+  --checker-dark: rgba(230, 230, 230, 0.92);
+  --panel-border: rgba(151, 151, 151, 0.7);
+  --ink-strong: #ffffff;
+  --purple-card: #bea8fb;
+  --purple-border: #3564ff;
+  --purple-shadow: rgba(47, 87, 255, 0.26);
+  --red-card: #f2141a;
+  --red-card-border: #a20e12;
+  --faq-background: #d82e4f;
+  --faq-card: #d73050;
+  --faq-outline: rgba(85, 18, 31, 0.82);
+}
